@@ -12,58 +12,58 @@
     </div>
     <div class="video-container">
         <div class="video">
-            <video src="./geethu.MP4">   </video>
+            <video src="./geethu.MP4" controls>   </video>
         </div>
         <div class="video">
-            <video src="./sally.MP4">   </video>
+            <video src="./sally.MP4" controls>   </video>
         </div>
         <div class="video">
-            <video src="./Rakshitha.MP4">   </video>
+            <video src="./Rakshitha.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Pranitha.MP4">   </video>
+            <video src="./Pranitha.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Sravya.MP4">   </video>
+            <video src="./Sravya.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Lasya.MP4">   </video>
+            <video src="./Lasya.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Sathwika.MP4">   </video>
-        </div>
-        
-        <div class="video">
-            <video src="./Avi.MP4">   </video>
+            <video src="./Sathwika.MP4" controls>   </video>
         </div>
         
         <div class="video">
-            <video src="./Akki.MP4">   </video>
+            <video src="./Avi.MP4" controls>   </video>
+        </div>
+        
+        <div class="video">
+            <video src="./Akki.MP4" controls>   </video>
         </div>
         <div class="video1">
-            <video src="./Revi.MP4">   </video>
+            <video src="./Revi.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Shailu.MP4">   </video>
+            <video src="./Shailu.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Varshita.MP4">   </video>
+            <video src="./Varshita.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Priyanka.MP4">   </video>
+            <video src="./Priyanka.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Pooja.MP4">   </video>
+            <video src="./Pooja.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./Varshini.MP4">   </video>
+            <video src="./Varshini.MP4"controls>   </video>
         </div>
         <div class="video">
-            <video src="./charan.MP4">   </video>
+            <video src="./charan.MP4"controls>   </video>
         </div>
         
         <div class="video">
-            <video src="">   </video>
+             <video src="">   </video> <!--why did you left this blank-->
         </div>
         
         
@@ -82,7 +82,7 @@
     
     videos.forEach((video, index) => {
         var button = document.createElement('button');
-        button.innerHTML = "Play";
+        button.innerHTML = video.paused? : "Play": "Pause";
         button.style.margin = "10px";
         
         video.parentNode.insertBefore(button, video);
