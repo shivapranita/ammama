@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <link rel="stylesheet" href="HOME.css">
+</head>
+<body>
+   <div class="container">
+    <div class="heading">BLESSINGS !
+    </div>
+    <div class="video-container">
+        <div class="video">
+            <video src="./geethu.MOV">   </video>
+        </div>
+        <div class="video">
+            <video src="./sally.MOV">   </video>
+        </div>
+        <div class="video">
+            <video src="./Rakshitha.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Pranitha.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Sravya.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Lasya.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Sathwika.MP4">   </video>
+        </div>
+        
+        <div class="video">
+            <video src="./Avi.MP4">   </video>
+        </div>
+        
+        <div class="video">
+            <video src="./Akki.MP4">   </video>
+        </div>
+        <div class="video1">
+            <video src="./Revi.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Shailu.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Varshita.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Priyanka.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Pooja.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./Varshini.MP4">   </video>
+        </div>
+        <div class="video">
+            <video src="./charan.MOV">   </video>
+        </div>
+        
+        <div class="video">
+            <video src="">   </video>
+        </div>
+        
+        
+
+        
+    </div>
+   </div> 
+   <div class="popup" id="popup">
+    <div class="popup-content">
+        <center><h1 id="dis">DISCLAIMER !!!</h1></center>
+        <p id="love"> THIS PAGE IS FILLED WITH LOVE </p>
+    </div>
+</div>
+<script>
+    var videos = document.querySelectorAll('video');
+    
+    videos.forEach((video, index) => {
+        var button = document.createElement('button');
+        button.innerHTML = "Play";
+        button.style.margin = "10px";
+        
+        video.parentNode.insertBefore(button, video);
+
+        button.addEventListener('click', () => {
+            if(video.paused) {
+                video.play();
+                button.innerHTML = "Pause";
+            } else {
+                video.pause();
+                button.innerHTML = "Play";
+            }
+        });
+        video.addEventListener('click', () => {
+            if(video.paused) {
+                video.play();
+                button.innerHTML = "Pause";
+            } else {
+                video.pause();
+                button.innerHTML = "Play";
+            }
+        });
+        video.addEventListener('ended', () => {
+            button.innerHTML = "Play";
+        });
+    });
+
+ 
+    setTimeout(function() {
+        document.getElementById('popup').style.display = 'block';
+        
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'none';
+        }, 2500);
+    }, 1000);
+</script>
+</body>
+</html>
