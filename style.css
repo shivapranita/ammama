@@ -84,6 +84,6 @@ p {
 
 /* Optional: Add a glowing effect to the main container when hovered */
 .main-container:hover {
-    background: rgba(0, 0, 0, 0); /* Make the background fully transparent */
+    background: rgba(0, 0, 0, 0.5); /* Make the background fully transparent */
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
 }
