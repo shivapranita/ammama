@@ -1,9 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(./IMG_3549.MP4) no-repeat center center fixed;
+    background: url('./Mabbu.JPG') no-repeat center center fixed; /* Fallback background */
     background-size: cover;
     overflow: hidden;
+    transition: background 0.5s ease;
 }
 
 .main-container {
@@ -16,14 +17,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding-left: 50px;
-    transition: background 0.5s ease;
 }
 
 .click-here {
     height: 820px;
     width: 500px;
     opacity: 0; /* Initially hidden */
-    animation: none;
     transition: opacity 2s ease; /* Smooth transition for hover */
 }
 
