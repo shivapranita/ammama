@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background video container -->
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="./IMG_3549.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
     <div class="main-container" id="container">
         <div class="click-here">
             <center><h3>Happy Birthday, Mabbu</h3></center>
@@ -19,26 +27,7 @@
             <a href="./home.html"><center><input type="button" value="CLICK HERE !!" id="CH"></center></a>
         </div>
     </div>
-
-    <script>
-        const videoUrl = './IMG_3549.MP4';
-        const container = document.getElementById('container');
-
-        const video = document.createElement('video');
-        video.src = videoUrl;
-        video.autoplay = true;
-        video.loop = true;
-        video.muted = true;
-
-        video.oncanplaythrough = function() {
-            container.style.background = `url(${videoUrl}) no-repeat center center fixed`;
-            container.style.backgroundSize = 'cover';
-        };
-
-        video.onerror = function() {
-            console.log('Video failed to load. Falling back to image.');
-        };
-    </script>
+    
 </body>
 </html>
 
